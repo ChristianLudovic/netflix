@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 300;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Lt.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 400;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Rg.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 700;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Md.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 800;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Bd.woff) format('woff')
+}
+
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 900;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Blk.woff) format('woff')
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+   
+}
+
+header{
+    padding: 25px 60px;
+    height: 32px;
+}
+
+.title h1{
+    font-family: 'Netflix Sans', sans-serif;
+    font-weight: 300;
+    font-size: 52px;
+    color: #ffffff;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 88vh;
+}
+
+.main .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.profiles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.profileCards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.profileCards-container > .profileCard, .addProfile{
+    flex-grow: 0;
+}
+
+.profileCard, .addProfile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.profileCard1-img{
+    background-image: url('./assets/illustrations/ProfilePicture1.svg');
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profileCard2-img{
+    background-image: url('./assets/illustrations/ProfilePicture2.svg');
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profileCard3-img{
+    background-image: url('./assets/illustrations/ProfilePicture3.svg');
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profileCard4-img{
+    background-image: url('./assets/illustrations/ProfilePicture4.svg');
+    width: 110px;
+    height: 110px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.profileCard-name h2{
+    font-family: 'Netflix Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #808080;
+}
+
+.add-button h2{
+    font-family: 'Netflix Sans', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #808080;
+}
+
+.add-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 110px;
+    height: 110px;
+}
+
+.add-icon img{
+    width: 60px;
+    height: 60px;
+}
+
+.manage-button button{
+    width: 308px;
+    height: 53px;
+    font-family: 'Netflix Sans', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #808080;
+    color: #808080;
+}
+
+@media screen and (max-width: 728px){
+    .main .container{
+        width: 80vw;
+    }
+
+    .profileCards-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        row-gap: 30px;
+        justify-content: space-between;
+        max-width: auto;
+
+    }
+
+    .main .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .title h1{
+        font-family: 'Netflix Sans', sans-serif;
+        font-weight: 300;
+        font-size: 48px;
+        color: #ffffff;
+    }
+
+    .profileCards-container{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 475px){
+    .profileCard1-img, .profileCard2-img, .profileCard3-img, .profileCard4-img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .add-icon{
+        width: 70px;
+        height: 70px;
+    }
+
+    .add-icon img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .profileCards-container{
+        gap: 20px;
+    }
+
+    
+    .title h1{
+        font-family: 'Netflix Sans', sans-serif;
+        font-weight: 300;
+        font-size: 40px;
+        color: #ffffff;
+    }
+
+    .profileCard-name h2, .add-button h2{
+        font-size: 14px;
+    }
+    
+    .manage-button button{
+        width: 280px;
+        height: 48px;
+        font-family: 'Netflix Sans', sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: transparent;
+        border: 1px solid #808080;
+        color: #808080;
+    }
+}
