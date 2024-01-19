@@ -269,7 +269,7 @@ header{
         height: 32px;
     }
 
-    .main{
-        gap: 30px;
+    .main .container {
+        gap: 40px;
     }
 }
